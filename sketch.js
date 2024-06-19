@@ -32,7 +32,7 @@ function setup() {
 function draw() {
     background(0);
     mostraBolinha();
-    movimentaBolinha();
+    geovana();
     verificaColisaoBorda();
     mostraRaquete(xRaquete, yRaquete);
     movimentaMinhaRaquete();
@@ -47,7 +47,7 @@ function mostraBolinha() {
   circle(xBolinha, yBolinha, diametro);
 }
 
-function movimentaBolinha() {
+function geovana() {
   xBolinha += velocidadeXBolinha;
   yBolinha += velocidadeYBolinha;
 }
